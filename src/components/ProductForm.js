@@ -1,5 +1,4 @@
 import {
-  Image,
   Button,
   FormControl,
   FormLabel,
@@ -10,10 +9,8 @@ import {
 import { useEffect, useState } from "react";
 
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 const ProductForm = ({ created }) => {
-  const navigate = useNavigate();
   const [types, setTypes] = useState([]);
 
   const [selectedType, setSelectedType] = useState("");

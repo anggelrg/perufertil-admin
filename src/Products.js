@@ -7,11 +7,12 @@ import ProductForm from "./components/ProductForm";
 
 const Products = () => {
   const [isEdit, setIsEdit] = useState(false);
+  const [listEdit, setListEdit] = useState(false);
 
   let content = isEdit ? (
     <ProductForm created={() => setIsEdit(false)} />
   ) : (
-    <ProductTable />
+    <ProductTable created={() => setListEdit(false)} />
   );
 
   return (
